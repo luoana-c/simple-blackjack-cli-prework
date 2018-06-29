@@ -33,8 +33,7 @@ def initial_round
 end
 
 def hit?(card_total)
-  loop do 
-    prompt_user
+ prompt_user
     input = get_user_input
 
     if input == "h"
@@ -44,7 +43,6 @@ def hit?(card_total)
     else 
       invalid_command
     end
-  end
 
   card_total
 end
