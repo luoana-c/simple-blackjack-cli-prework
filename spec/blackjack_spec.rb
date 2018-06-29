@@ -96,10 +96,12 @@ describe "#hit?" do
   it "deals another card when user types 'h'" do
     expect(self).to receive(:get_user_input).and_return("h")
     expect(self).to receive(:deal_card).and_return(7)
+    
     expect(hit?(7)).to eq(14)
   end
 
 end
+
 
 describe "#runner" do
 
